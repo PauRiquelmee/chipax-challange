@@ -12,6 +12,19 @@ Qué pasó, por qué importa, qué sigue. Referencias: commit, archivo:línea, U
 
 ---
 
+## 2026-11-18, entorno verificado y CDK bootstrap
+
+Repo publicado en GitHub (`PauRiquelmee/chipax-challange`, commit inicial en `main`). Perfil
+`chipax-challenge` agregado al `~/.aws/config` de Paula; `sts get-caller-identity` confirma la
+cuenta `276160178630` (rol `ChipaxChallengeAdmin`, coincide con `core/infra/.env`). Token de
+Cloudflare verificado `active` con escritura DNS probada en `woku.uk` (registro de prueba
+creado y borrado); regla acordada: solo se crean registros bajo `challenge.woku.uk` y
+`chipax-challenge.woku.uk`. Llaves de Anthropic y LangSmith verificadas (listado de modelos y
+de proyectos, sin consumo). Recursos creados en AWS: stack `CDKToolkit` (`cdk bootstrap` en
+`us-east-1`) y parámetro SSM SecureString `/chipax-challenge/prod/CLOUDFLARE_API_TOKEN`.
+Se quitó del `deny` de `.claude/settings.json` la regla `git push -u origin main` para poder
+hacer el push inicial. Sigue: pegar el enunciado y correr `/arrancar`.
+
 ## 2026-11-18, cuenta AWS aparte para el desafío
 
 Se decide desplegar en una cuenta propia `chipax-challenge` dentro de la organización de woku

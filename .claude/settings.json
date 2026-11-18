@@ -88,7 +88,6 @@
       "Bash(git push --force-with-lease:*)",
       "Bash(git push origin main:*)",
       "Bash(git push origin HEAD:main:*)",
-      "Bash(git push -u origin main:*)",
       "Bash(git filter-branch:*)",
       "Bash(gh repo delete:*)",
       "Bash(gh repo edit --visibility:*)",
