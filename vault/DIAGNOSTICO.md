@@ -4,7 +4,7 @@
 
 - Fecha:
 - Fuente: `vault/ENUNCIADO.md` (y aclaraciones al día de hoy)
-- Método: lectura del enunciado, investigación del dominio, revisión del estado del repo
+- Método: lectura del enunciado, investigación del dominio, búsqueda web de mejores prácticas, revisión del estado del repo
 
 ## 1. Qué pide el desafío
 
@@ -39,6 +39,13 @@
 
 > Si el desafío se beneficia de un agente o de llamadas LLM: para qué, con qué herramientas,
 > qué riesgo tiene equivocarse y cómo se valida. Si no aporta, decirlo y no forzarlo.
+
+## 6b. Mejores prácticas y alternativas
+
+> Resultado de la búsqueda web acotada de `/arrancar` (3 a 5 búsquedas). Una fila por hallazgo.
+
+| Fuente (enlace) | Qué dice | Decisión que mueve | Adoptamos o descartamos |
+|---|---|---|---|
 
 ## 7. Restricciones y supuestos
 
