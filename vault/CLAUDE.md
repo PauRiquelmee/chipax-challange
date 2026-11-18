@@ -7,6 +7,7 @@ código vive en `core/` y `console/`, y desde aquí se referencia (archivo, comm
 
 | Archivo | Qué es | Quién lo escribe |
 |---|---|---|
+| `CONTEXTO-ENTREVISTA.md` | Lo que dijo el CTO de Chipax sobre el formato y el criterio del challenge. Contexto, no se edita | La responsable |
 | `ENUNCIADO.md` | El desafío tal como llegó. No se edita: si hay aclaraciones, van abajo en "Aclaraciones" con fecha y fuente | La responsable |
 | `DIAGNOSTICO.md` | Qué pide el desafío, qué evalúan, escenarios observables, restricciones, riesgos y preguntas. Se escribe antes de proponer nada | Claude, con `/arrancar` |
 | `PLAN.md` | Frontmatter de estado y checklist por fases verticales. Fuente de verdad del avance. Se marca durante la implementación | Claude |
