@@ -1,0 +1,23 @@
+# Dependencias y builds
+node_modules/
+dist/
+build/
+coverage/
+cdk.out/
+*.tsbuildinfo
+.vite/
+
+# Entorno: solo se versionan los .env.example
+.env
+.env.*
+!.env.example
+
+# Claude Code: ajustes personales
+.claude/settings.local.json
+
+# Sistema y editores
+.DS_Store
+*.log
+.idea/
+.vscode/*
+!.vscode/extensions.json
