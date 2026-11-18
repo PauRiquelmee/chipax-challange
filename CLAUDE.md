@@ -31,11 +31,11 @@ Con pocas instrucciones el repo va del enunciado a prod. Cada paso deja algo rev
 | # | Paso | Cómo | Salida revisable |
 |---|---|---|---|
 | 1 | Enunciado | La responsable pega el desafío en `vault/ENUNCIADO.md` | El texto original, sin editar |
-| 2 | Diagnóstico | `/arrancar` | `vault/DIAGNOSTICO.md`: qué pide, qué evalúan, escenarios observables, riesgos, preguntas abiertas |
-| 3 | Plan | `/arrancar` (misma pasada) | `vault/PLAN.md` en fases verticales, con `estado: nueva-propuesta` |
+| 2 | Diagnóstico | `/arrancar` | `vault/DIAGNOSTICO.md`: qué pide, qué evalúan, escenarios observables, mejores prácticas (búsqueda web), riesgos, preguntas abiertas |
+| 3 | Plan | `/arrancar` (misma pasada) | `vault/PLAN.md` en fases verticales, con `estado: nueva-propuesta`, y un artefacto de revisión con diagnóstico, plan, diagrama de la solución y 2 opciones de UI si hay front |
 | 4 | Partida | La responsable dice "parte" | `estado: en-curso`, anotado en `BITACORA.md` con sus palabras |
 | 5 | Bootstrap | `/bootstrap` (solo la primera vez) | `core` y `console` compilan, testean y despliegan un "hola mundo" a `challenge.woku.uk` |
-| 6 | UI | `/opciones-ui` antes de cualquier pantalla | Un artefacto con 3 opciones. **No se programa front hasta que la responsable elija** |
+| 6 | UI | Ronda 1 en `/arrancar` (2 opciones); pantallas siguientes con `/opciones-ui` (3 opciones) | Un artefacto con las opciones. **No se programa front hasta que la responsable elija** |
 | 7 | Implementación | TDD por fase | Un commit por fase, plan y bitácora al día antes del commit |
 | 8 | Verificación | `/verificar` | `vault/evidencia/pruebas.md` y `ux-review.md` con capturas del MCP de Chrome y enlaces a trazas de LangSmith |
 | 9 | Prod | PR y merge a `main`, luego `/desplegar` | Escenarios comprobados en `challenge.woku.uk`; `README.md` de entrega listo para el evaluador |
@@ -50,7 +50,7 @@ no al final.
    bugs: el bug se reproduce con un test antes de arreglarlo.
 2. **No se implementa un plan en `nueva-propuesta`.** Una respuesta a una decisión abierta no
    es una partida.
-3. **Nada de front sin las 3 opciones aprobadas** (`/opciones-ui`). Todo trabajo de interfaz
+3. **Nada de front sin opciones aprobadas**: 2 en `/arrancar` (ronda 1) y 3 en `/opciones-ui` para las pantallas siguientes. Todo trabajo de interfaz
    usa el skill `impeccable` (diseño, auditoría, pulido).
 4. **Implementado no es terminado.** Algo está hecho cuando se probó de punta a punta: stack
    local con el MCP de Chrome (UI) y LangSmith (agentes), con evidencia en el vault. La suite
